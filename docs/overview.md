@@ -28,4 +28,26 @@ voice and probably video while the session is on
 
 
 ###proj_organization
- 
+
+- /index.js  
+initializes express serve
+
+- /server/io.js
+socket.io server logic. receives the user`s requests, calls the server logic to
+process them and sends response accordingly. 
+
+- /server/server,js
+sets up the https server (express.js). handles the http requests from the users
+and works as frontend for room`s creation and joining.
+
+- /server/warehouse/..
+holds the logic for the rooms management and will, at some point, hold the
+database logic as well.
+
+-/public/...
+frontend logic. notably, the /public/assets/js/yougether.js is where the user`s
+socket.io logic is (to handle responses from the server and send requests)
+
+- /server/views  
+some handlebars views - let`s refactor everything for single page view with
+socket.io ?
