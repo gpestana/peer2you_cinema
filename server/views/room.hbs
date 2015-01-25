@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+  </head>
+
+ <link rel="stylesheet" href="/static/assets/css/bootstrap.css">
+ <link rel="stylesheet" href="/static/assets/css/yougether.css">
+
+  <body>
+
+<div id="slim-header"></div>
+<div id = "header"><h5><b>yougether.io</b></h5></div>
+
+<div id="theater-background"> 
+<div class = "row nopadding">
+
+ <!--player column-->
+ <div class = "col-md-8 nopadding"> 
+  <div class="embed-responsive embed-responsive-16by9">
+    <center> <div id="player"></div></center>
+  </div>
+  </div>  
+ <!--end player column-->
+
+ <!--chat column-->
+ <div class = 'col-md-4 nopadding'  id='chat'>
+  <div id ="chat-online">
+  <b>welcome to {{roomID}}</b><br><br>
+  <b>online now</b><br>
+    {{userName}} (you)
+  </div>
+
+  <div id = "chat-text"></div>
+  <input class="fixed" type="text"  id="chat_msg" placeholder="Press enter"> 
+ </div>
+ <!--end chat column-->
+
+</div> <!-- row -->
+</div> <!-- theater -->
+
+
+  </body>
+  <script src="https://cdn.socket.io/socket.io-1.0.4.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+  <script src="/static/assets/js/yougether.js"></script>
+<script>	
+		initPlayer('{{videoUrl}}')
+    user = '{{userName}}'
+    roomID = '{{roomID}}'
+
+    socket.emit('join room', '{{roomID}}')
+
+	</script>
+</html>

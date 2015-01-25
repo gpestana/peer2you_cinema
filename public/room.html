@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+  </head>
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/yougether.css">
+  
+<body>
+
+<div class="container-fluid">
+<div class="row">
+
+  <div class="col-md-9">
+    <div class="row">
+
+      <div class="col-md-12">
+        <div id="video-frame">
+        youtube video
+        </div>
+      </div><!-- video -->
+  
+      <div class="col-md-12">
+        <div id="others">
+          <p>Change video</p>  
+          <p>Info</p>  
+        </div>
+      </div> <!-- others -->
+
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div id="chat">
+      <div id="info">
+        <p><b>Room "Hello world"</b></p>
+        <b>Online users:</b>
+        <div id="user-list">
+        <ul>
+          <li>User1</li>
+          <li>User2</li>
+        </ul>
+        </div> 
+      </div>
+      <div id="coversation">
+        <ol>
+        <li id="bubble-left"><p>Hi! Are you enjoying the video ?</p></li>
+        <li id="bubble-left"><p>I find it so  cool!</p></li>
+        <li id="bubble-right"><p>ahah me too!</p></li>
+        <li id="bubble-left"><p>;)</p></li>
+      <ol>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- main row-->
+
+<div id ="bar"></div>
+
+<div id="input">
+  <input type="text" name="chat" placeholder="Type and press enter">
+</div><!-- input -->
+
+</div> <!-- container -->
+  
+</body>
+  <script src="https://cdn.socket.io/socket.io-1.0.4.js"></script>
+  <script src="./assets/js/yougether.js"></script>
+</html>
+

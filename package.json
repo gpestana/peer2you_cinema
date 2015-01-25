@@ -1,0 +1,35 @@
+{
+  "name": "yougether_app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "~4.6.1",
+    "hbs": "~2.7.0",
+    "socket.io": "~1.0.6",
+    "socket.io-hotel": "~0.2.1",
+    "tape": "~2.13.4",
+    "underscore": "~1.6.0",
+    "youtube-validator": "~1.0.0"
+  },
+  "devDependencies": {
+    "socket.io-client": "^1.0.6",
+    "tap-spec": "^0.2.0",
+    "tape": "^2.13.4"
+  },
+  "scripts": {
+    "test": "nodejs tests/tap_all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gpestana/yougether.git"
+  },
+  "author": "gpestana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gpestana/yougether/issues"
+  }
+}
