@@ -4,7 +4,7 @@ var config = require('./config.js')
 var io = require('./server/io.js').io.listen(http)
 
 http.listen(3000, function() {
-	console.log('listening on port 3000')
+	console.log('listening on http://178.79.165.86:3000')
 })
 
 exports.http = http

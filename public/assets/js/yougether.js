@@ -102,7 +102,7 @@ function scroll() {
 socket.on('create room res', function(res) {
 	var div = document.getElementById('operationalDiv');
 	if (res) {
-  	var roomURL = "http://localhost:3000/watch/"+res
+  	var roomURL = "http://178.79.165.86:3000/watch/"+res
 	  div.innerHTML = div.innerHTML + 
 		'<a href='+roomURL+' target ="_blank">Room with id '+res+'</a> <br>'
   } else {
