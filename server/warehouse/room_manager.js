@@ -1,6 +1,5 @@
 var _ = require('underscore')
 
-
 var rooms = {}
 
 var newRoom = function(roomID, url,  cb) {

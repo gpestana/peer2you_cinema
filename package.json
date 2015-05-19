@@ -13,12 +13,16 @@
     "socket.io-hotel": "~0.2.1",
     "tape": "~2.13.4",
     "underscore": "~1.6.0",
-    "youtube-validator": "~1.0.0"
+    "youtube-validator": ">=1.0.0"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
     "socket.io-client": "^1.0.6",
     "tap-spec": "^0.2.0",
-    "tape": "^2.13.4"
+    "tape": "^2.13.4",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
   },
   "scripts": {
     "test": "nodejs tests/tap_all.js"

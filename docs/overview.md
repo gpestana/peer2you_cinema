@@ -7,12 +7,6 @@ broadcasting videos that are hosted on the web or on the room`s creator machine.
 in addition, the room`s users can interact within each other through chatting,
 voice and probably video while the session is on  
 
-###agenda
-- mvp using clound hosted videos by end of Feb.
-- start working on sessions with videos hosted by users usign webrct after mvp
-  is released
-
-
 ##mvp
 - rooms with less than 3 users
 - only youtube videos 

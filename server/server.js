@@ -10,6 +10,9 @@ exports.endpoint = app
 
 var MAX_USR_ROOM = 3
 
+app.get('/log', function(req, res) {
+  res.sendfile('test.txt');
+});
 
 app.get('/', function(req, res) {
   res.sendfile('public/index.html')
@@ -30,6 +33,8 @@ app.get('/watch/:roomID', function(req, res){
           userName: userName,
           roomID: roomID,
           videoUrl: res_room.currURL
+          //add user to the room ?
+        
         })
         return  
       }
